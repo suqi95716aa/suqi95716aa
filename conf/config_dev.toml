@@ -1,0 +1,118 @@
+# ---------------- LLM ----------------
+[SPARK_OFFICIAL]
+VERSION = ""
+SPARK_APPID = ""
+SPARK_API_KEY = ""
+SPARK_API_SECRET = ""
+SPARK_URL = ""
+
+[DEEPSEEK_OFFICIAL]
+DEEPSEEK_API_KEY = ""
+DEEPSEEK_URL = ""
+DEEPSEEK_CODE_MODEL_NAME = ""
+DEEPSEEK_CHAT_MODEL_NAME = ""
+
+[GPT4_OFFICIAL]
+GPT_API_KEY = ""
+GPT_URL = ""
+
+[KIMI]
+KIMI_API = ""
+KIMI_ACCESS_KEY = ""
+KIMI_ACCESS_TOKEN = ""
+
+[EMBEDDING]
+BGE-DISTANCE = ""
+BGE-EMBEDDING = ""
+
+
+# ---------------- OCR ----------------
+[UMI_OCR]
+UMI_OCR_URL = ""
+
+
+# ---------------- Database and cache ----------------
+[DB_CONFIG]
+MYSQL_HOST = ""
+MYSQL_USERNAME = ""
+MYSQL_PASSWORD = ""
+MYSQL_PORT = ""
+MYSQL_DATABASE = ""
+MYSQL_CHARSET = ""
+
+[CACHE_CONFIG]
+REDIS_HOST = ""
+REDIS_PORT = ""
+REDIS_AUTH = ""
+REDIS_PASSWORD = ""
+
+[ES_CONFIG]
+ES_HOST = ""
+ES_PORT = ""
+
+#[MILVUS_CONFIG]
+#host = "116.205.136.164"
+#port = "19530"
+#account = ""
+#password = ""
+#[MILVUS_CONFIG.COLLECTIONS]
+#col_name = "query_templates"
+
+[MILVUS_CONFIG]
+[MILVUS_CONFIG.BASE]
+auto_id = true
+drop_old = false
+text_field = "text"
+primary_field = "pk"
+replica_number = 1
+vector_field = "text_vector"
+consistency_level = "Strong"
+[MILVUS_CONFIG.INDEX]
+nlist = 10
+metric_type = "IP"
+index_type = "IVF_FLAT"
+[MILVUS_CONFIG.CONNECTION]
+account = ""
+password = ""
+secure = false
+port = ""
+host = ""
+[MILVUS_CONFIG.COLLECTIONS]
+col_name = "articleStore"
+ttl =  60
+rep_num = 1
+col_desc = "It is a collection of storage article vector for retrieve."
+
+[MINIO_CONFIG]
+[MINIO_CONFIG.BUCKET_NAMES]
+USER_FILE_BUCKET = "user-kb-space"
+[MINIO_CONFIG.BASE]
+URL = ""
+ACCOUNT = ""
+PASSWORD = ""
+[MINIO_CONFIG.KEY]
+SECURE = false
+ACCESS_KEY = ""
+SECRET_KEY = ""
+
+[NEO4J_CONFIG]
+[NEO4J_CONFIG.BASE]
+URL = ""
+ACCOUNT = ""
+PASSWORD = ""
+
+
+# ---------------- Something secret ----------------
+[AES]
+SECRET_KEY = ""
+
+[SMS]
+ACCESS_KEY_ID = ""
+ACCESS_KEY_SECRET = ""
+END_POINT = ""
+SIGN_NAME = ""
+TEMPLATE_CODE = ""
+
+
+
+
